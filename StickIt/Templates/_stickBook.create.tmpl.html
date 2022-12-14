@@ -1,0 +1,7 @@
+﻿<div class="stickBook-item stickBook-item-create" data-bind="activity: $parent.saveNewStickBookCmd.isExecuting">
+    <a class="icon-cancel" data-bind="click: $parent.cancelNewStickBook"></a>
+    <a class="icon-save" data-bind="command: $parent.saveNewStickBookCmd, visible: title.isValid()"></a>
+    <div class="input-container" data-bind="validationOptions: { insertMessages: false }">
+        <input type="text" data-bind="enter: $parent.saveNewStickBookCmd, value: title, hasfocus: true, valueUpdate: 'afterkeydown', escape: 'clear'" placeholder="stick book name" />
+    </div>
+</div>  

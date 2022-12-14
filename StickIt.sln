@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StickIt.Web", "StickIt\StickIt.Web.csproj", "{EB156A26-C627-45D1-BC62-6AC8087F883E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StickIt.Data", "StickIt.Data\StickIt.Data.csproj", "{54BE65D4-2351-495E-A910-97DD7E439B4F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StickIt.Model", "StickIt.Model\StickIt.Model.csproj", "{6FC0F7F6-136E-417C-ABD0-9CAF8F5DB55D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StickIt.Data.Contracts", "StickIt.Data.Contracts\StickIt.Data.Contracts.csproj", "{161AE6E9-2426-43E9-8D5D-4891974EDFC7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TS7S.Base", "..\TS7S\TS7S.Base\TS7S.Base.csproj", "{9A940FA8-333B-46DE-A965-3A2B341FF108}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TS7S.Entity", "..\TS7S\TS7S.Entity\TS7S.Entity.csproj", "{F26AEB9F-F619-44AD-A522-755833D3FF39}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EB156A26-C627-45D1-BC62-6AC8087F883E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB156A26-C627-45D1-BC62-6AC8087F883E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB156A26-C627-45D1-BC62-6AC8087F883E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB156A26-C627-45D1-BC62-6AC8087F883E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54BE65D4-2351-495E-A910-97DD7E439B4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54BE65D4-2351-495E-A910-97DD7E439B4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54BE65D4-2351-495E-A910-97DD7E439B4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54BE65D4-2351-495E-A910-97DD7E439B4F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FC0F7F6-136E-417C-ABD0-9CAF8F5DB55D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FC0F7F6-136E-417C-ABD0-9CAF8F5DB55D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FC0F7F6-136E-417C-ABD0-9CAF8F5DB55D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FC0F7F6-136E-417C-ABD0-9CAF8F5DB55D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{161AE6E9-2426-43E9-8D5D-4891974EDFC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{161AE6E9-2426-43E9-8D5D-4891974EDFC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{161AE6E9-2426-43E9-8D5D-4891974EDFC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{161AE6E9-2426-43E9-8D5D-4891974EDFC7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A940FA8-333B-46DE-A965-3A2B341FF108}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A940FA8-333B-46DE-A965-3A2B341FF108}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A940FA8-333B-46DE-A965-3A2B341FF108}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A940FA8-333B-46DE-A965-3A2B341FF108}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F26AEB9F-F619-44AD-A522-755833D3FF39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F26AEB9F-F619-44AD-A522-755833D3FF39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F26AEB9F-F619-44AD-A522-755833D3FF39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F26AEB9F-F619-44AD-A522-755833D3FF39}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,9 @@
+﻿<section id="stickBooks-view" class="view">
+    <header>
+        <span class="stickBooks-icon"></span>
+        <span class="view-head-text">What the book you wrote remind in?</span>
+
+        <a class="add-new-stickBook" data-bind="click: newStickBook, visible: !isDirty()"></a>
+    </header>
+    <section class="view-list" data-bind="template: {name: stickBookTemplate, foreach: stickBooks}"></section>
+</section>

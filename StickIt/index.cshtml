@@ -1,0 +1,52 @@
+﻿@{
+    Layout = null;
+}
+
+@using System.Web.Optimization
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width" />
+    <title>Web Stick</title>
+
+    @Styles.Render("~/Content/css", "~/Content/less")
+
+        @Scripts.Render("~/bundles/modernizr")
+   
+</head>
+<body>
+    <div id="busyindicator"></div>
+    <section>
+        <header id="shell-view">
+            <div id="site-logo-container">
+            </div>
+            <div data-bind="template:{name: filterBoxTemplate}"></div>
+        </header>
+
+        <section id="main">
+            @RenderPage("Views/login.cshtml")
+            @RenderPage("Views/places.cshtml")
+            @RenderPage("Views/stickBooks.cshtml")
+            @RenderPage("Views/stickSheets.cshtml")
+            @RenderPage("Views/stickSheet.cshtml")
+        </section>
+
+        <footer>
+        </footer>
+    </section>
+
+    @Scripts.Render("~/bundles/jquery",
+                    "~/bundles/jsextlibs",
+                    "~/Scripts/lib/require.js",
+                    "~/bundles/jsapplibs",
+                    //"~/bundles/jsmocks", // remove for publish
+                    "~/Scripts/main.js")
+</body>
+</html>

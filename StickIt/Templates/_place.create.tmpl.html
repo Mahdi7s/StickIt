@@ -1,0 +1,7 @@
+﻿<div class="place-item place-item-create" data-bind="activity: $parent.saveNewPlaceCmd.isExecuting">
+    <a class="icon-cancel" data-bind="click: $parent.cancelNewPlace"></a>
+    <a class="icon-save" data-bind="command: $parent.saveNewPlaceCmd, visible: name.isValid()"></a>
+    <div class="input-container" data-bind="validationOptions: { insertMessages: false }">
+        <input type="text" data-bind="value: name, hasfocus: true, valueUpdate: 'afterkeydown', enter: $parent.saveNewPlaceCmd, escape: 'clear'" placeholder="place name" />
+    </div>
+</div>  

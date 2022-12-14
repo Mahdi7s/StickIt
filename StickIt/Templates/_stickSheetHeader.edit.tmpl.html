@@ -1,0 +1,8 @@
+﻿<div class="stickSheetHeader stickSheetHeader-edit" data-bind="activity: saveHeaderCmd.isExecuting">
+    <input type="text" data-bind="value: stickSheetTitle, hasfocus: true" />
+    
+    <div>
+        <a class="icon-save" data-bind="command: saveHeaderCmd, visible: isEditingHeader"></a>
+        <a class="icon-cancel" data-bind="click: cancelHeaderEdit, visible: isEditingHeader"></a>
+    </div>
+</div>

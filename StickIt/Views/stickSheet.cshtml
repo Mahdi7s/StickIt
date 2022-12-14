@@ -1,0 +1,9 @@
+﻿<section id="stickSheet-view" class="view">
+    <header data-bind="template: stickSheetHeaderTemplate">
+    </header>
+    <section>
+        <ul data-bind="foreach: stickSheetItems">
+            <li data-bind="template: {name: $parent.stickSheetItemTemplate}"></li>
+        </ul>
+    </section>
+</section>

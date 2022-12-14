@@ -1,0 +1,16 @@
+﻿<div class="stickSheet-item" data-bind="click: $parent.gotoDetails">
+    <a class="icon-edit" data-bind="click: $parent.editStickSheet, visible: !$parent.isDirty(), clickBubble: false"></a>
+    <a class="icon-delete" data-bind="click: $parent.deleteStickSheet, visible: !$parent.isDirty(), clickBubble: false"></a>
+    <span data-bind="text: title"></span>
+    
+    <div data-bind="foreach: stickSheetItems" class="stickSheetItems-brief-container">
+        <div class="stickSheetItems-brief-item">
+            <p data-bind="text: text"></p>
+        </div>
+    </div>
+
+    <div class="stickSheet-delete-confirm-container" data-bind="visible: state() === 'delete'">
+        <a class="icon-delete" data-bind="click: $parent.deleteStickSheet, clickBubble: false"></a>
+        <a class="icon-cancel" data-bind="click: $parent.deleteStickSheet, clickBubble: false"></a>
+    </div> 
+</div>

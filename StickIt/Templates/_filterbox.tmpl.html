@@ -1,0 +1,16 @@
+﻿<div class="filter-box-container">
+    
+    <input class="filter-box"
+           data-bind="attr: {placeholder: filterBoxPlaceholder}, value: filterBoxText, valueUpdate: 'afterkeydown', escape: 'clear' "
+           type="text" />
+    
+    <a class="clear-text" data-bind="click: function() { filterBoxText(''); } " title="Clear"></a>
+     
+    <button class="refresh" 
+        <!--data-bind="command: forceRefreshCmd, activity: forceRefreshCmd.isExecuting"-->>
+        Refresh</button>
+    
+    <!--<small>Showing <span data-bind="text:places().length"></span> places</small>-->
+
+</div>
+

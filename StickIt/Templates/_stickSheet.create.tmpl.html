@@ -1,0 +1,7 @@
+﻿<div class="stickSheet-item stickSheet-item-create" data-bind="activity: $parent.saveNewStickSheetCmd.isExecuting">
+    <a class="icon-cancel" data-bind="click: $parent.cancelNewStickSheet"></a>
+    <a class="icon-save" data-bind="command: $parent.saveNewStickSheetCmd, visible: title.isValid()"></a>
+    <div class="input-container" data-bind="validationOptions: { insertMessages: false }">
+        <input type="text" data-bind="enter: $parent.saveNewStickSheetCmd, value: title, hasfocus: true, valueUpdate: 'afterkeydown', escape: 'clear'" placeholder="stick sheet name" />
+    </div>
+</div>  

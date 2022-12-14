@@ -1,0 +1,10 @@
+﻿<div class="stickBook-item" data-bind="click: $parent.gotoSheets">
+    <a class="icon-edit" data-bind="click: $parent.editStickBook, visible: !$parent.isDirty(), clickBubble: false"></a>
+    <a class="icon-delete" data-bind="click: $parent.deleteStickBook, visible: !$parent.isDirty(), clickBubble: false"></a>
+    <span data-bind="text: title"></span>
+    
+    <div class="stickBook-delete-confirm-container" data-bind="visible: state() === 'delete'">
+        <a class="icon-delete" data-bind="click: $parent.deleteStickBook, clickBubble: false"></a>
+        <a class="icon-cancel" data-bind="click: $parent.deleteStickBook, clickBubble: false"></a>
+    </div> 
+</div>

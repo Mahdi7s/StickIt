@@ -1,0 +1,9 @@
+﻿<section id="stickSheets-view" class="view">
+    <header>
+        <span class="stickSheets-icon"></span>
+        <span class="view-head-text">What the sheet you wrote remind in?</span>
+
+        <a class="add-new-stickSheet" data-bind="click: newStickSheet, visible: !isDirty()"></a>
+    </header>
+    <section class="view-list" data-bind="template: {name: stickSheetTemplate, foreach: stickSheets}"></section>
+</section>

@@ -1,0 +1,10 @@
+﻿<div class="place-item" data-bind="click: $parent.gotoBooks">
+    <a class="icon-edit" data-bind="click: $parent.editPlace, visible: !$parent.isDirty(), clickBubble: false"></a>
+    <a class="icon-delete" data-bind="click: $parent.deletePlace, visible: !$parent.isDirty(), clickBubble: false"></a>
+    <span data-bind="text: name"></span>
+    
+    <div class="place-delete-confirm-container" data-bind="visible: state() === 'delete'">
+        <a class="icon-delete" data-bind="click: $parent.deletePlace, clickBubble: false"></a>
+        <a class="icon-cancel" data-bind="click: $parent.deletePlace, clickBubble: false"></a>
+    </div>
+</div>
